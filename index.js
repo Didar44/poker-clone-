@@ -11,7 +11,7 @@ app.use(cors());
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: 'https://your-frontend-domain.com',
+    origin: 'https://poker-clone-fronted-9.onrender.com',
     methods: ['GET', 'POST'],
     credentials: true
   }
@@ -122,7 +122,7 @@ function advanceTurn(room) {
     }
   }
 
-  // All players folded or all-in - game may end here or next stage
+ 
   console.log(`No active players left to take turn in room ${room.id}`);
 }
 
